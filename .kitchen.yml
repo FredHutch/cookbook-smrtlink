@@ -24,6 +24,10 @@ suites:
         - test/integration/default
     attributes:
       smrtlink:
+        service:
+          reload: true
+        paths:
+          SMRT_ROOT: /opt/smrtlink
         local_dirs:
           /opt/smrtlink:
             target: /var/tmp/smrtlink
