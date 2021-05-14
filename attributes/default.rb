@@ -1,7 +1,7 @@
 default['smrtlink']['user'] = {
   'username' => 'smrtlink',
   'home' => '/home/smrtlink',
-  'manage_user' => false
+  'manage_user' => false,
 }
 default['smrtlink']['service']['reload'] = false
 # default['smrtlink']['local_dirs'] => {
