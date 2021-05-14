@@ -15,6 +15,7 @@ if node['smrtlink']['local_dirs']
     directory target['target'] do
       owner node['smrtlink']['user']['username']
       mode '0755'
+      recursive true
     end
     link source do
       to target['target']
