@@ -13,8 +13,7 @@ verifier:
   name: inspec
 
 platforms:
-  - name: ubuntu-16.04
-  - name: centos-7
+  - name: ubuntu-18.04
 
 suites:
   - name: default
@@ -24,3 +23,11 @@ suites:
       inspec_tests:
         - test/integration/default
     attributes:
+      smrtlink:
+        local_dirs:
+          /opt/smrtlink:
+            target: /var/tmp/smrtlink
+            link: true
+          /opt/smrtlink/db_datadir:
+            target: /var/tmp/db_datadir
+            link: false
