@@ -4,7 +4,7 @@ maintainer_email 'mrg@fredhutch.org'
 license 'Apache 2.0'
 description 'Installs/Configures smrtlink'
 long_description 'Installs/Configures smrtlink'
-version '0.1.1'
+version '0.1.2'
 chef_version '>= 13.0'
 
 # The `issues_url` points to the location where issues for this cookbook are
